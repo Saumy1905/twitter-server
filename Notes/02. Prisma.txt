@@ -1,0 +1,10 @@
+		Prisma
+
+Prisma is basically an ORM which will help to "make queries to our Postgres Database"
+
+?			==> Optional
+@unique 		==> Unique
+@id @default(cuid())	==> Random 'id' generator
+
+We are going to apply "GoogleAuth" for password
+

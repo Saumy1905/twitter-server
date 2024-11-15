@@ -1,0 +1,30 @@
+In GraphQL, there is only one end-point, for our case, we named it as /graphql
+
+		Query VS Mutations
+
+When we want to get some data from the server, it's a QUERY
+
+Ex. Get user by ID
+Ex. Get feed items for a user
+Ex. Get user profile information
+
+When you want to send some data to the server, it's a Mutation
+
+Ex. CREATE a new user
+Ex. CREATE a new post
+
+		typeDefs
+
+Inside your GraphQL, typeDefs is basically your schema
+
+Schema: What types of QUERIES, MUTATIONS, you are going to use
+
+		resolvers
+
+And based on the Schema, you are have to define your RESOLVERS
+
+In resolvers, you actually make functions that are going to resolve that particular data
+
+
+
+!	==> Required

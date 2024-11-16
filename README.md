@@ -1,5 +1,3 @@
-# Backend Project
-
 This is a backend project built using the following technologies:
 
 - [Node.js](https://nodejs.org): A JavaScript runtime for building scalable server-side applications.

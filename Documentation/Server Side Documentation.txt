@@ -1,0 +1,254 @@
+/**********************************         CarPooling Project/Technical Sites         **********************************/
+
+        /**********     Core JS Project     **********/
+
+        https://developer.mozilla.org/en-US/
+            [CSS, HTML, JS --> Documentation]
+
+        https://compressnow.com/
+        https://tinypng.com/
+            [Uses Lossy compression to reduce the file size]
+
+        https://www.iloveimg.com/crop-image
+
+        https://docs.emmet.io/cheat-sheet/
+            [Plugin to improve HTML & CSS Workflow]
+                ul>li*5
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+
+
+        https://favicon.io/
+            Small icon displayed within the browser tabs
+
+        https://webaim.org/resources/contrastchecker/
+        https://webaim.org/resources/contrastchecker/#maincontent
+            Important for ensuring that text and images are easily readable by checking the measure of Δ in brightness between two colors
+
+        https://coolors.co/palettes/trending
+        https://fonts.google.com/
+        http://via.placeholder.com/
+        https://placehold.co/
+
+
+
+
+                                            /**********     Web Project Configuration     **********/
+
+
+
+
+        https://nextjs.org/
+        https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
+
+
+
+        /**********     Client Application --> Frontend     **********/
+
+
+
+                https://tailwindcss.com/
+                https://tailwindcss.com/docs/grid-template-rows
+                https://react-icons.github.io/react-icons/
+
+                http://localhost:3000/
+
+
+
+        /**********     Server Application --> Backend     **********/
+
+
+
+                https://www.apollographql.com/
+                https://www.apollographql.com/docs/apollo-server
+                https://www.apollographql.com/docs/apollo-server/api/express-middleware
+                https://www.prisma.io/
+                https://www.prisma.io/docs/getting-started
+                https://www.prisma.io/docs/getting-started/quickstart-sqlite
+                https://supabase.com/
+
+
+        /**********     OAuth     **********/
+
+                https://www.npmjs.com/package/@react-oauth/google
+                https://console.cloud.google.com/welcome/new?pli=1
+                https://jwt.io/
+                http://localhost:8000/graphql
+                http://localhost:5555/
+
+
+
+/**********************************         Technologies         **********************************/
+
+        *   "Node.js"
+                        for our backend code which would be running graphql server inside node.js environment
+
+                            "open-source, cross-platform JS runtime environment", "to run JS on our server side"
+
+                            https://nodejs.org/en
+
+        *   "GraphQL"
+                        for our API, which provides a flexible & efficient way to define our data model and query it
+
+                            "Alternate to REST API", "Queries, Mutations, Resolvers, Create, Post, Get, Update, Delete"
+
+
+                        *   "Apollo GraphQL"
+                                            "framework or server for GraphQL", "for hosting our GraphQL schemas, Queries, Mutations"
+
+        *   "Next.js"
+                        for our 'frontend', which is a popular framework for building React applications with server-side rendering and optimized performance
+
+                            "A framework of React -> most popular library to build user interfaces", "React has a lot of things missing, so 'Next.js' is a powerful React framework which is use in industries"
+
+        *   "Prisma ORM"
+                        for our DB ORM, which provides a type-safe & easy-to-use interface for integrating with our PostgreSQL DB
+
+                            "for making Queries, Read & Write to our DB"
+
+        *   "PostgreSQL"
+                        as our DB, which is a powerful & reliable 'relational DB' system
+
+                            "we can use any relational DB"
+
+        *   "Supabase"
+                        for hosting & managing cloud postgresql DB
+
+                            "to host our PostgreSQL DB"
+
+        *   "Tailwind"
+                        for styling and re-usable components
+
+        *   "Typescript"
+                        to maintain code quality and write type-safe code
+
+        *   "AWS"
+                        for storage and deployments
+
+
+
+
+
+/**********************************         Installation            **********************************/
+
+    Install NodeJs from the site
+        "https://nodejs.org/en"
+
+    node --version
+    npm -v
+
+            "yarn" is an alternative for 'npm'
+                'yarn' is much faster and more caching capabilities
+                    to "install" yarn, you need 'npm', and then we can use yarn to further install the dependencies
+                        "https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable"
+
+    npm install --global yarn
+    yarn create next-app .
+                        ( . => present working directory )
+                         TypeScript -> Yes
+                         ESLint -> Yes
+                         Tailwind CSS -> Yes
+                         'src/' directory -> No
+                         App Router -> No
+                         Turbopack -> No
+                         import alias (@/* by default)? -> Yes
+                         import alias would you like to configured? ... @/*
+
+    yarn dev
+                {Tailwind CSS IntelliSense 'Extension'}
+    yarn add react-icons
+
+Server Application/Backend
+
+    yarn init
+            "initializes a new 'package.json' file"
+    yarn add typescript -D
+    yarn tsc --init
+                        "Change 'tsconfig.json' file"
+    yarn add express
+                        "Create 'scripts -> start, build, dev' in package.json gile"
+    yarn add tsc-watch -D
+    yarn dev
+    yarn add @apollo/server graphql
+    yarn add body-parser
+    yarn dev
+                        "http://localhost:8000/graphql"
+    npm install prisma --save-dev
+    npx prisma init --datasource-provider postgresql
+    npx prisma migrate dev --name init
+    npm install prisma --save-dev
+    npm install @prisma/client
+    npx prisma migrate dev --name init
+    npx prisma generate
+    yarn add @react-oauth/google
+    yarn add axios
+    yarn add jsonwebtoken
+                            "for generating token for the user"
+    yarn add @types/jsonwebtoken -D
+                            "we are using TypeScript, so we have to install this library as a Dev Dependency"
+    npx prisma studio
+                        "Browser the data at 'http://localhost:5555/' "
+
+
+[Feature] Call this API from the 'Next.js' application
+[Feature] Implementing the Server and the client communication
+
+
+
+
+
+                        /**********************************         Project Workflow         **********************************/
+
+
+
+
+
+
+      Login
+       /
+      /
+Frontend ------'yarn create next-app .'===========  Next.js ----    Tailwind CSS    ----    react-icons    ----    OAuth    ----    Token
+       \                                                                                                                              |
+        \                                                                                                                           Query
+         \                                                                                                                            |
+          `-----<-----<-----<-----<-----<-----<-----<-----<-----<-----<-----<-----<-----<-------                                   Resolver
+                                                                                                |                                     |
+                                                                                                |                                  GraphQL
+                                                                                                |                                     |
+Backend  ------     'yarn init'     ===========  "package.json" ----    GraphQL    ----    Prisma ORM    ----    OAuth    ----    Backend Custom Token
+                                                       |                   |                    ^                                     |
+                                                       |                   |                    |                                 Verification
+                                                       |                   |                    |                                     |
+                                                       |                   |                    |                            PostgreSQL info store
+                                                       |                   |                    |                                     |
+                                                       |                   |                    |                            Prisma Studio/Supabase
+                                                       |                   |              Local Machine
+                                                       |                   |                    ^
+                                                       |                   |                    |
+                                                       |                   |                    |
+                                                Project Config.          Query                  |
+                                                                           |                PostgreSQL
+                                                                         OAuth                  ^
+                                                                           |                    |
+                                                                         Token                  |
+                                                                           |                    |
+                                                                       Resolvers             Database
+                                                                           |                    ^
+                                                                      json web token            |
+                                                                           |                    |
+                                                                      Custom Token              |
+                                                                           |                    |
+                                                                      Verification-------------Data
+
+
+
+
+
+
+
+
